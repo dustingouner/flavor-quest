@@ -1,0 +1,36 @@
+.home {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/Users/dustingouner/Mod3/flavor-quest/src/assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+}
+
+.homePage-question {
+  text-align: center;
+}
+
+.home-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80vw;
+}
+
+.random-meal-button, .takeout-button {
+  background-color: #4DA66B;
+  color: white;
+  font-weight: bold;
+  width: 10em;
+  cursor: pointer;
+}

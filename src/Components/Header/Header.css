@@ -1,0 +1,35 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 15vh;
+  width: 100vw;
+  background-color: #4DA66B;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vh;
+
+}
+
+.logo {
+  height: 10vh;
+  width: 10vh;
+  cursor: pointer;
+}
+
+.slogan {
+  display: flex;
+  text-align: center;
+  width: 23vh;
+  font-size: 20%;
+  color: white;
+  margin-right: 3em;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
