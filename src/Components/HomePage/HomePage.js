@@ -1,5 +1,6 @@
 import React from 'react'
 import './HomePage.css'
+import { Link } from "react-router-dom"
 
 
 const HomePage = () => {
@@ -9,7 +10,9 @@ const HomePage = () => {
       <div className='content-container'>
         <h2 className='homePage-question'>Are you ready to try out your new meal?</h2>
         <div className='home-buttons-container'>
+          <Link to={'/randomMeal'} style={{textDecoration:'none'}}>
           <button className='random-meal-button'>Random Meal</button>
+          </Link>
           <button className='takeout-button'>Take Out</button>
         </div>
       </div>

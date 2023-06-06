@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import fetchData from '../../ApiCalls';
 import Header from '../Header/Header';
 import HomePage from '../HomePage/HomePage';
+import MealDetail from '../MealDetail/MealDetail';
+import { Route, Switch } from 'react-router-dom'
 
 import './App.css';
 
@@ -18,17 +20,27 @@ class App extends Component {
       fetchData()
         .then(data => this.setState({randomMeal: data}))
       }
+
+  
+
       
       render() {
 
     return (
-      <div className='App'>
-        <Header />
-        <Switch >
-          
-        <HomePage />
 
-        </Switch>
+      <div className='App'>
+          <Header />
+          <Switch>
+
+            <Route exact path="/">
+              <HomePage />
+            </Route>
+            <Route exact path='/randomMeal'>
+              <MealDetail randomMeal={this.state.randomMeal.meals} />
+            </Route>
+          </Switch>
+
+
       </div>
     )
   }
