@@ -17,10 +17,20 @@ class App extends Component {
   }
 
     componentDidMount() {
-      fetchData()
-        .then(data => this.setState({randomMeal: data}))
+      this.getRandomMeal()
       }
 
+      getRandomMeal = () => {
+        fetchData()
+        .then(data => this.setState({ randomMeal: data }))
+      }
+
+
+      resetRandomMeal = () => {
+        this.setState({ randomMeal: ''}, () => {
+          this.getRandomMeal()
+        })
+      }
   
 
       
@@ -29,14 +39,14 @@ class App extends Component {
     return (
 
       <div className='App'>
-          <Header />
+          <Header resetRandomMeal={this.resetRandomMeal} />
           <Switch>
 
             <Route exact path="/">
               <HomePage />
             </Route>
             <Route exact path='/randomMeal'>
-              <MealDetail randomMeal={this.state.randomMeal.meals} />
+              <MealDetail randomMeal={this.state.randomMeal.meals} newMeal={this.getRandomMeal} />
             </Route>
           </Switch>
 
