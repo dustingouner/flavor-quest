@@ -11,7 +11,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      randomMeal: '', 
+      randomMeal: [], 
       
     }
   }
@@ -27,17 +27,17 @@ class App extends Component {
 
 
       resetRandomMeal = () => {
-        this.setState({ randomMeal: ''}, () => {
+        // this.setState({ randomMeal: []}, () => {
           this.getRandomMeal()
-        })
+        // })
       }
   
 
       
       render() {
 
+        console.log('line 39-randomMeal', this.state.randomMeal)
     return (
-
       <div className='App'>
           <Header resetRandomMeal={this.resetRandomMeal} />
           <Switch>

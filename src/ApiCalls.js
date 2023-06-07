@@ -18,7 +18,7 @@ const fetchData = () => {
     if(!response.ok) {
       throw new Error()
     }
-    
+    console.log('fetch')
     return response.json()
   })
 }

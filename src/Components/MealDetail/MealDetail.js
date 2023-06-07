@@ -33,7 +33,7 @@ function MealDetail({ randomMeal, newMeal }) {  //pass in randomMeal function to
         height="315" // Set the desired height
         border="0"
         src={embedUrl}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
     </div>
