@@ -11,12 +11,15 @@ const HomePage = () => {
         <h2 className='homePage-question'>Are you ready to try out your new meal?</h2>
         <div className='home-buttons-container'>
           <Link to={'/randomMeal'} style={{textDecoration:'none'}}>
-          <button className='random-meal-button'>Random Meal</button>
+            <button className='random-meal-button'>Random Meal</button>
           </Link>
-          <button className='takeout-button'>Take Out</button>
+          <a href='https://www.yelp.com' rel='noopener noreferrer'>
+            <button className='takeout-button'>Take Out</button>
+          </a>
         </div>
       </div>
     </section>
+
   )
 }
 
