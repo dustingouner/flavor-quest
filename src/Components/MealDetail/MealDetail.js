@@ -2,11 +2,13 @@ import React from "react";
 import './MealDetail.css'
 import { Link } from 'react-router-dom'
 import fetchData from "../../ApiCalls";
+import PropTypes from 'prop-types'
 
 function MealDetail({ randomMeal, newMeal }) {  //pass in randomMeal function to be called onClick of new meal button
   console.log(randomMeal[0])
   const meal = randomMeal[0]
   const mealId = meal.idMeal
+  console.log(newMeal)
 
   const videoUrl = meal.strYoutube;
   const videoId = videoUrl.split('v=')[1];
@@ -58,3 +60,8 @@ function MealDetail({ randomMeal, newMeal }) {  //pass in randomMeal function to
 
 
 export default MealDetail
+
+MealDetail.propTypes = {
+  randomMeal: PropTypes.array,
+  newMeal: PropTypes.func.isRequired
+}

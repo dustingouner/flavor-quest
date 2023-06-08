@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './ShoppingList.css';
+import PropTypes from 'prop-types'
 
 class ShoppingList extends Component {
   constructor(props) {
@@ -70,3 +71,8 @@ class ShoppingList extends Component {
 }
 
 export default ShoppingList;
+
+ShoppingList.propTypes = {
+  props: PropTypes.array
+  
+}
