@@ -1,3 +1,13 @@
-.list {
-  list-style-type: none;
+.shopping-list-container {
+  background-image: url(/Users/dustingouner/Mod3/flavor-quest/src/assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5vh 5%; */
+  min-height: 100vh;
 }
+
+

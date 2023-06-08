@@ -45,22 +45,25 @@ class ShoppingList extends Component {
     const { ingredientItems } = this.state;
 
     return (
-      <div>
-        <h2 className='title'>Ingredients</h2>
-        <ul>
-          {ingredientItems.map((ingredientItem, index) => (
-            <li key={index} className='list'>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={ingredientItem.purchased}
-                  onChange={() => this.handleCheckboxChange(index)}
-                />
-                {ingredientItem.ingredientMeasurement}
-              </label>
-            </li>
-          ))}
-        </ul>
+      <div className='shopping-list-container'>
+        <section className='list-details'>
+
+          <h2 className='title'>Ingredients</h2>
+          <ul>
+            {ingredientItems.map((ingredientItem, index) => (
+              <li key={index} className='list'>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={ingredientItem.purchased}
+                    onChange={() => this.handleCheckboxChange(index)}
+                  />
+                  {ingredientItem.ingredientMeasurement}
+                </label>
+              </li>
+            ))}
+          </ul>
+        </section>
       </div>
     );
   }

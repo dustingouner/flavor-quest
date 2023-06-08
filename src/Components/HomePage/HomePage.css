@@ -1,5 +1,5 @@
 .home {
-  height: 85vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +7,7 @@
   background-image: url(/Users/dustingouner/Mod3/flavor-quest/src/assets/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 85vh;
+  
 }
 
 .content-container {
