@@ -25,6 +25,7 @@ class App extends Component {
       getRandomMeal = () => {
         fetchData()
         .then(data => this.setState({ randomMeal: data }))
+        .catch(error => console.log(error))
       }
 
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const Header = ( {resetRandomMeal }) => {
   const logo = <img className='logo' src={require('../../assets/logo1.png')} alt='flavor quest logo'/>
@@ -21,3 +22,7 @@ const Header = ( {resetRandomMeal }) => {
 
 
 export default Header
+
+Header.propTypes = {
+  resetRandomMeal: PropTypes.func.isRequired
+}
