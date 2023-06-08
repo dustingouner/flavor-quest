@@ -13,9 +13,7 @@ const HomePage = () => {
           <Link to={'/randomMeal'} style={{textDecoration:'none'}}>
             <button className='random-meal-button'>Random Meal</button>
           </Link>
-          <a href='https://www.yelp.com' rel='noopener noreferrer'>
-            <button className='takeout-button'>Take Out</button>
-          </a>
+          <a href="https://www.yelp.com" class="takeout-button">Take Out</a>
         </div>
       </div>
     </section>
