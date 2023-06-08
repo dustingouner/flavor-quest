@@ -1,9 +1,6 @@
-/* .App {
-  background-image: url(/Users/dustingouner/Mod3/flavor-quest/src/assets/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+html, body {
+  height: vh;
 
-  height: 85vh;
-} */
+}
 
 

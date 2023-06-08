@@ -1,5 +1,5 @@
 .home {
-  height: 85vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,14 +7,15 @@
   background-image: url(/Users/dustingouner/Mod3/flavor-quest/src/assets/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 85vh;
+  
 }
 
 .content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60vh;
+  height: 35vh;
+  
 }
 
 .homePage-question {
@@ -24,7 +25,7 @@
 .home-buttons-container {
   display: flex;
   justify-content: space-evenly;
-  width: 80vw;
+  width: 45vw;
 }
 
 .random-meal-button, .takeout-button {
@@ -33,4 +34,6 @@
   font-weight: bold;
   width: 10em;
   cursor: pointer;
+  height: 4em;
+  font-size: 1em;
 }
