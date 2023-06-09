@@ -16,7 +16,7 @@ describe("Home page view", () => {
   })
 
   it('User should see a button labeled Random Meal. Should bring user to a new page displaying random meal details', () => {
-    cy.get('.homePage-question').contains('Are you ready to try out your new meal?')
+    cy.get('.homePage-question').contains('Are you ready to test your cooking skills?')
     cy.get('.random-meal-button').should('be.visible').contains('Random Meal');
     cy.get('.random-meal-button').click();
     cy.url().should('include', '/randomMeal');

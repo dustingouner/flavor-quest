@@ -25,11 +25,10 @@
 .home-buttons-container {
   display: flex;
   justify-content: space-evenly;
-  width: 45vw;
+  width: 50vw;
 }
 
-.takeout-button,
-.random-meal-button {
+.takeout-button {
   /* Shared button styles */
   display: inline-block;
   padding: 10px 20px;
@@ -40,12 +39,33 @@
   border: none;
   border-radius: 4px;
   color: #ffffff;
-  background-color: #28a745;
+  background-color: #4f926d;
+  width: 8em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
+/* .takeout-button {
+  width: 6em;
+} */
+
 .random-meal-button {
-  /* Additional styles for random-meal-button */
-  background-color: #28a745;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #4f926d;
+  width: 10em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #4f926d;
 }
 
 .takeout-button:hover,

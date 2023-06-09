@@ -1,0 +1,14 @@
+.error-container {
+  background-image: url(/Users/dustingouner/Mod3/flavor-quest/src/assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.error-message-container {
+  padding: 15%;
+  background-color: rgba(255, 255, 255, 0.8);;
+}
