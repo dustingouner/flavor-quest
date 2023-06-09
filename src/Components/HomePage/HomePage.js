@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <section className='home'>
       <div className='content-container'>
-        <h2 className='homePage-question'>Are you ready to try out your new meal?</h2>
+        <h2 className='homePage-question'>Are you ready to test your cooking skills?</h2>
         <div className='home-buttons-container'>
           <Link to={'/randomMeal'} style={{textDecoration:'none'}}>
             <button className='random-meal-button'>Random Meal</button>
