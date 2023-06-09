@@ -1,5 +1,5 @@
 .meal-detail-container {
-  background-image: url(/Users/dustingouner/Mod3/flavor-quest/src/assets/background.jpg);
+  background-image: url(../../assets/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
