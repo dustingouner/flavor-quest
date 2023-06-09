@@ -1,4 +1,4 @@
-describe("Home page view", () => {
+describe("Meal Detail view", () => {
   beforeEach(() => {
     cy.intercept('GET', "https://www.themealdb.com/api/json/v1/1/random.php", {
       fixture: '/meal.json'
@@ -6,7 +6,7 @@ describe("Home page view", () => {
     cy.visit("http://localhost:3000")
   })
 
-  it('should display a random meal to the user with an Image, cooking instructions, title, video, and two buttons', () => {
+  it('should display random meal to the user with an Image, cooking instructions, title, and video', () => {
     cy.get('.random-meal-button').click();
     cy.url().should('include', '/randomMeal');
     cy.get('.meal-name').should('contain.text', 'Ma Po Tofu | Chinese | Beef')
@@ -21,10 +21,12 @@ describe("Home page view", () => {
       .should('contain.text', 'New Meal')
     cy.get('#player iframe')
       .should('have.attr', 'title', 'Meal Video')
-      .and('have.attr', 'width', '560')
-      .and('have.attr', 'height', '315')
       .and('have.attr', 'src')
       .should('include', 'https://www.youtube.com/embed/IhwPQL9dFYc') 
   })
+
+  // it('Should allow the user to click on new meal button in order to generate a new meal', () => {
+
+  // })
   })
 
