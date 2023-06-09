@@ -24,5 +24,5 @@ const Header = ( {resetRandomMeal }) => {
 export default Header
 
 Header.propTypes = {
-  resetRandomMeal: PropTypes.func.isRequired
+  resetRandomMeal: PropTypes.func
 }

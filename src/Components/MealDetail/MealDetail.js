@@ -32,7 +32,7 @@ function MealDetail({ randomMeal, newMeal }) {
           <iframe
             title="Meal Video"
             width="560" 
-            height="415" 
+            height="700" 
             border="0"
             src={embedUrl}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
