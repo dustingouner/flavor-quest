@@ -9,7 +9,7 @@ function MealDetail({ randomMeal, newMeal }) {
   const videoUrl = meal.strYoutube;
   const videoId = videoUrl.split('v=')[1];
   const embedUrl = `https://www.youtube.com/embed/${videoId}`
-  
+
   return (
     <div className="meal-detail-container">
       <div className="details meal-detail-content meal-detail">
