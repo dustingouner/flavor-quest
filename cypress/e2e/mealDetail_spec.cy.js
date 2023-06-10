@@ -15,7 +15,7 @@ describe("Meal Detail view", () => {
 
     cy.get('.meal-detail-buttons-container')
       .find('button')
-      .should('contain.text', 'Shopping List')
+      .should('contain.text', 'Grocery List')
     cy.get('.meal-detail-buttons-container')
       .find('button')
       .should('contain.text', 'New Meal')
@@ -24,9 +24,5 @@ describe("Meal Detail view", () => {
       .and('have.attr', 'src')
       .should('include', 'https://www.youtube.com/embed/IhwPQL9dFYc') 
   })
-
-  // it('Should allow the user to click on new meal button in order to generate a new meal', () => {
-
-  // })
-  })
+})
 

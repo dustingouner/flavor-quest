@@ -11,7 +11,7 @@ describe("Grocery List", () => {
     cy.get('[href="/shoppingList/52947"] > button').click()
     cy.url().should('include', '/shoppingList/52947')
     cy.get('.shopping-list-container').should('be.visible')
-    cy.get('.title').should('have.text', 'Ingredients');
+    cy.get('.title').should('have.text', 'Ingredients List');
     cy.get('.list').should('have.length.gt', 0);
     cy.get(':nth-child(1) > label').contains('Tofu - 450g')
     cy.get('.list input[type="checkbox"]').first().check().should('be.checked');
