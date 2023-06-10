@@ -33,6 +33,7 @@ Flavor Quest is designed with your convenience in mind. Its intuitive interface,
 
 ## Preview
 
+![flavor-quest](https://github.com/dustingouner/flavor-quest/assets/117230717/28fa1c2e-2fd8-487f-9011-3890e8e529be)
 
 
 
