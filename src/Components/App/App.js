@@ -5,7 +5,7 @@ import HomePage from '../HomePage/HomePage';
 import MealDetail from '../MealDetail/MealDetail';
 import ShoppingList from '../ShoppingList/ShoppingList';
 import Error from '../Error/Error'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import './App.css';
 
 class App extends Component {
@@ -38,36 +38,38 @@ class App extends Component {
   }
   
   render() {
+    const {randomMeal, error} = this.state
       return (
         <>
         <Header resetRandomMeal={this.resetRandomMeal} />
           {this.state.error ? (
             <>
-              <Error errorMessage={this.state.error}/>
-            </>
-          
-          ) : (
-
+              <Error errorMessage={error}/>
+            </>) : (
         <div className='App'>
-          {/* <Header resetRandomMeal={this.resetRandomMeal} /> */}
           <Switch>
             <Route exact path="/">
               <HomePage />
             </Route>
             <Route exact path='/randomMeal'>
-              <MealDetail randomMeal={this.state.randomMeal.meals} newMeal={this.getRandomMeal} />
+              <MealDetail randomMeal={randomMeal.meals} newMeal={this.getRandomMeal} />
             </Route>
             <Route exact path='/shoppingList/:mealId'>
-              <ShoppingList randomMeal={this.state.randomMeal.meals}/>
+              <ShoppingList randomMeal={randomMeal.meals}/>
+            </Route>
+            <Route exact path="/error">
+              <Error errorMessage={error} location={window.location}/>
+            </Route>
+            <Route path="*">
+              <Redirect to="/error" />
             </Route>
           </Switch>
         </div>
-      ) }
-      </>
+      )}
+        </>
       )
-      }
-
     }
+  }
     
 
 export default App

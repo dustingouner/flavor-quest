@@ -49,7 +49,7 @@ class ShoppingList extends Component {
       <div className='shopping-list-container'>
         <section className='list-details'>
 
-          <h2 className='title'>Ingredients</h2>
+          <h2 className='title'>Ingredients List</h2>
           <ul>
             {ingredientItems.map((ingredientItem, index) => (
               <li key={index} className='list'>
