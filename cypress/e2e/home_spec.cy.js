@@ -27,21 +27,15 @@ describe("Home page view", () => {
 
   // Try to go back and fix error with testing my take out button link. Cypress suggested using uncaught:exception but did not work. See comments below. 
 
-  it.skip('User should see a button labeled Take Out. Should bring user to yelp website when clicked', () => {
-    cy.get('a.takeout-button').click();
-
-    // Assert that the user is now on Yelp.com
-    cy.url().should('eq', 'https://www.yelp.com/');
-
-    // Go back to the original page
-    cy.go('back');
-
-    // Assert that the user is back on the original page
-    cy.url().should('eq', '/');
+  // it.skip('User should see a button labeled Take Out. Should bring user to yelp website when clicked', () => {
+  //   cy.get('a.takeout-button').click();
+  //   cy.url().should('eq', 'https://www.yelp.com/');
+  //   cy.go('back');
+  //   cy.url().should('eq', '/');
       
   
-    })
-  })
+  //   })
+   })
 
 
   // cy.get('a.takeout-button').click();

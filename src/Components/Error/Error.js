@@ -1,7 +1,10 @@
 import React from 'react';
 import './Error.css';
+import PropTypes from 'prop-types'
 
 const Error = ({ location, errorMessage }) => {
+  console.log(location)
+  console.log('error', errorMessage)
   const displayMessage = errorMessage
     ? errorMessage : `The URL path ${location.pathname} you used was incorrect. Please try again.`;
 
@@ -15,3 +18,10 @@ const Error = ({ location, errorMessage }) => {
 };
 
 export default Error;
+
+
+Error.propTypes = {
+  location: PropTypes.object,
+  errorMessage: PropTypes.string
+  
+}
