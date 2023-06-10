@@ -28,7 +28,7 @@ Flavor Quest is designed with your convenience in mind. Its intuitive interface,
  - Once WebPack has compiled the necessary resources, you will see a link within the text of your terminal. You can copy and paste that link into your browser to access a locally-hosted version of this application on your machine. 
 
 ## Deployed Page
-- [Deployed Link](flavor-quest.vercel.app)
+- [Deployed Link](https://flavor-quest.vercel.app/)
 ---
 
 ## Preview
