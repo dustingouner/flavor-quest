@@ -24,13 +24,14 @@ class App extends Component {
     });
   }
 
-  getRandomMeal = () => {
-    return fetchData()
-      .then(data => this.setState({ randomMeal: data }))
-      .catch(error => {
-        console.log(error);
-        this.setState({ error: "Recipe Retrieval Failed! Our gourmet chefs are whipping up something extraordinary in the kitchen, but it seems they couldn't find the secret ingredient for your requested meal. Please give them a moment to work their magic, and they'll serve you a scrumptious dish in no time! Stay hungry, stay hopeful! "});
-      });
+  getRandomMeal = async () => {
+    try {
+      const data = await fetchData();
+      return this.setState({ randomMeal: data });
+    } catch (error) {
+      console.log(error);
+      this.setState({ error: "Recipe Retrieval Failed! Our gourmet chefs are whipping up something extraordinary in the kitchen, but it seems they couldn't find the secret ingredient for your requested meal. Please give them a moment to work their magic, and they'll serve you a scrumptious dish in no time! Stay hungry, stay hopeful! " });
+    }
   }
   
   resetRandomMeal = () => {
