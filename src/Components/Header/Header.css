@@ -1,14 +1,12 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
   background-color: #4DA66B;
   position: fixed;
-  top: 0;  /* position element at top-left corner of vp*/
+  top: 0;  
   left: 0;  
-  width: 100%; 
   z-index: 99999;
 
 }
@@ -17,13 +15,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15vw;
+  
 
 }
 
 .logo {
-  height: 15vh;
-  width: 20vh;
+  width: 8vw;
   cursor: pointer;
   margin-left: 1em
 }
@@ -39,4 +36,25 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+}
+
+
+@media screen and (max-width: 480px) {
+  .slogan {
+    font-size: .75em;
+  }
+
+  .logo {
+    width: 25vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .slogan {
+    font-size: 1em;
+  }
+
+  .logo {
+    width: 15vw;
+  }
 }

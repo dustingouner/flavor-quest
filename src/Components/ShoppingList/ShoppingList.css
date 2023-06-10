@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+.title {
+  margin-bottom: 0em;
+}
+
 ul {
   list-style: none;
 }
@@ -26,6 +30,17 @@ ul {
 @media only screen and (max-width: 480px) {
 
   .list-details {
-    width: 70%;
+    width: 80vw;
+  }
+
+  .title {
+    margin-bottom: 0em;
   }
 }
+
+
+@media only screen and (min-width: 768px) {
+  .list-details {
+    width: 50vw;
+  }
+  }

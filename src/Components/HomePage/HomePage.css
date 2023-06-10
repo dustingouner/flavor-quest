@@ -25,7 +25,7 @@
 .home-buttons-container {
   display: flex;
   justify-content: space-evenly;
-  width: 50vw;
+  width: 100%;
 }
 
 .takeout-button {
@@ -46,9 +46,6 @@
   text-overflow: ellipsis;
 }
 
-/* .takeout-button {
-  width: 6em;
-} */
 
 .random-meal-button {
   display: inline-block;
@@ -61,7 +58,7 @@
   border-radius: 4px;
   color: #ffffff;
   background-color: #4f926d;
-  width: 10em;
+  width: 10.5em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -70,9 +67,24 @@
 
 .takeout-button:hover,
 .random-meal-button:hover {
-  /* Button styles on hover */
   opacity: 0.8;
 }
+
+
+@media screen and (max-width: 480px) {
+  .home-buttons-container {
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .homePage-question {
+      font-size: inherit;
+    }
+  }
+
+  
+
 
 
 
